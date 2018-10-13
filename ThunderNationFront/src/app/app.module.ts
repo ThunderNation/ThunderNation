@@ -2,10 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { SidenavComponent } from './support/sidenav/sidenav.component';
-import { LineChartComponent } from './support/line-chart/line-chart.component';
-import { BarChartComponent } from './support/bar-chart/bar-chart.component';
-import { PieChartComponent } from './support/pie-chart/pie-chart.component';
+import { SidenavComponent } from './components/support/sidenav/sidenav.component';
+import { LineChartComponent } from './components/support/line-chart/line-chart.component';
+import { BarChartComponent } from './components/support/bar-chart/bar-chart.component';
+import { PieChartComponent } from './components/support/pie-chart/pie-chart.component';
 
 import { RouterModule, Routes } from '@angular/router';
 
