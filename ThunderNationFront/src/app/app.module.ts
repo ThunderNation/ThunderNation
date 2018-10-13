@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './components/pages/home/home.component';
+
 import { SidenavComponent } from './components/support/sidenav/sidenav.component';
 import { LineChartComponent } from './components/support/line-chart/line-chart.component';
 import { BarChartComponent } from './components/support/bar-chart/bar-chart.component';
@@ -10,6 +12,7 @@ import { PieChartComponent } from './components/support/pie-chart/pie-chart.comp
 import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
+    { path: '', component: HomeComponent },
 
   // { path: 'crisis-center', component: CrisisListComponent },
   // { path: 'hero/:id',      component: HeroDetailComponent },
@@ -28,6 +31,7 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     SidenavComponent,
     LineChartComponent,
     BarChartComponent,
