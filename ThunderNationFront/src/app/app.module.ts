@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
-import { MaterialModule } from './material.module';
+import { MaterialModule } from './material/material.module';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { SlideshowModule } from 'ng-simple-slideshow';
 
@@ -22,6 +22,7 @@ import { PieChartComponent } from './components/support/pie-chart/pie-chart.comp
 
 
 import { RouterModule, Routes } from '@angular/router';
+import { ProfileComponent } from './components/pages/profile/profile.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },
@@ -47,7 +48,8 @@ const appRoutes: Routes = [
     SidenavComponent,
     LineChartComponent,
     BarChartComponent,
-    PieChartComponent
+    PieChartComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
