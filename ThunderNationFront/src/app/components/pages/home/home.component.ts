@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  imageSources = ['../../../../assets/slider-images/Zapdos.png',
+                  '../../../../assets/slider-images/img1.jpg',
+                  '../../../../assets/slider-images/img2.jpg']
+
   constructor() { }
 
   ngOnInit() {
