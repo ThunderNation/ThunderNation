@@ -1,0 +1,11 @@
+<div class="container">
+  <h1 style="text-align: center;">Top Communities</h1>
+  <div *ngFor= "let group of groups; let i = index" class = "groups">
+    <div *ngIf="i % 2 != 0" color="primary">
+      <p>{{i}} - group</p>
+    </div>
+    <div *ngIf="i % 2 == 0" color = "secondary">
+      <p>{{i}} -  group</p>
+    </div>
+  </div>
+</div>
