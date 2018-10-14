@@ -27,10 +27,19 @@ import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 
 import { RouterModule, Routes } from '@angular/router';
+
+import { ProfileComponent } from './components/pages/profile/profile.component';
+
+import { LoginComponent } from './components/pages/login/login.component';
+import { GroupsComponent } from './components/pages/groups/groups.component';
+
+
+
 import { SignupComponent } from './components/pages/signup/signup.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },
+    {path: 'groups', component: GroupsComponent},
     { path: 'login', component: LoginComponent},
     { path: 'profile', component: ProfileComponent},
     { path: 'signup', component: SignupComponent}
@@ -59,6 +68,7 @@ const appRoutes: Routes = [
     PieChartComponent,
     ProfileComponent,
     LoginComponent,
+    GroupsComponent,
     SignupComponent,
   ],
   imports: [

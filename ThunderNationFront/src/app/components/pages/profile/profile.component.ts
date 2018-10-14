@@ -20,6 +20,11 @@ export class ProfileComponent implements OnInit {
   constructor(private dataService: UserDataService) { }
 
   ngOnInit() {
+    /*
+    this.dataService.getData(URL).subscribe((response) => {
+      console.log(response);
+      //this.chartDatasets = response.datasets;
+      //this.chartLabels = response.labels;
     // this.dataService.getData(URL).subscribe((response) => {
     //   console.log(response);
     //   //this.chartDatasets = response.datasets;
@@ -35,6 +40,7 @@ export class ProfileComponent implements OnInit {
       this.user = response
 
     })
+    */
   }
 
   /*
