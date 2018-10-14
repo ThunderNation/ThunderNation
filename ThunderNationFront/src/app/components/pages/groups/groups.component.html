@@ -1,3 +1,8 @@
-<p>
-  groups works!
-</p>
+<div *ngFor= "let group of groups" class = "groups">
+  <div *ngIf="groupCount % 2 != 0" color="primary">
+    {{groupCount++}}. group
+  </div>
+  <div *ngIf="groupCount % 2 == 0" color = "secondary">
+    {{groupCount++}}. group
+  </div>
+</div>

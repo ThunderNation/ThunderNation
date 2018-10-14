@@ -9,6 +9,9 @@ import { UserDataService }  from './../../../services/user-data.service'
 })
 export class GroupsComponent implements OnInit {
 
+  groups: any;
+  groupCount=1;
+
   constructor(private userService: UserDataService) { }
 
   ngOnInit() {

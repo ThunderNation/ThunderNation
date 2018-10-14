@@ -16,11 +16,13 @@ export class ProfileComponent implements OnInit {
   constructor(private dataService: UserDataService) { }
 
   ngOnInit() {
+    /*
     this.dataService.getData(URL).subscribe((response) => {
       console.log(response);
       //this.chartDatasets = response.datasets;
       //this.chartLabels = response.labels;
     })
+    */
   }
 
 }
