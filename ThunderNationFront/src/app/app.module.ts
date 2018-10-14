@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common'
+
 import { MaterialModule } from './material.module';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { SlideshowModule } from 'ng-simple-slideshow';
