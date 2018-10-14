@@ -1,16 +1,22 @@
 .row{
   padding-top: 2em;
-  padding-right: 3em;
-  padding-left: 3em;
 }
 
 p {
   background-color: #FBC02D;
-  padding: 1.5em;
+  /* padding: 1.5em; */
 }
 
 div.box{
+  background-color: #fff;
+  /* padding: 1.5em; */
+  /* margin:2em; */
+}
+
+.box-inner{
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
   background-color: #FBC02D;
-  padding: 1.5em;
-  margin:2em;
+  height: 200px;
 }
