@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common'
 
 import { MaterialModule } from './material.module';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
@@ -19,12 +20,14 @@ import { SidenavComponent } from './components/support/sidenav/sidenav.component
 import { LineChartComponent } from './components/support/line-chart/line-chart.component';
 import { BarChartComponent } from './components/support/bar-chart/bar-chart.component';
 import { PieChartComponent } from './components/support/pie-chart/pie-chart.component';
+import { FormsModule } from '@angular/forms';
 
 
 import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './components/pages/login/login.component';
 
 const appRoutes: Routes = [
-    { path: '', component: HomeComponent },
+    { path: '', component: LoginComponent },
 
   // { path: 'crisis-center', component: CrisisListComponent },
   // { path: 'hero/:id',      component: HeroDetailComponent },
@@ -47,14 +50,17 @@ const appRoutes: Routes = [
     SidenavComponent,
     LineChartComponent,
     BarChartComponent,
-    PieChartComponent
+    PieChartComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot(
       appRoutes,
       // { enableTracing: true } // <-- debugging purposes only
     ),
+    CommonModule,
     HttpClientModule,
     BrowserAnimationsModule,
 
