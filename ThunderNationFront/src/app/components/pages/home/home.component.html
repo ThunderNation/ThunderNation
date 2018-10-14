@@ -1,17 +1,13 @@
-<p>
-    <span matBadge="4" matBadgeOverlap="false">Text with a badge</span>
-  </p>
-  
-  <p>
-    Button with a badge on the left
-    <button mat-raised-button color="primary"
-        matBadge="8" matBadgePosition="before" matBadgeColor="accent">
-      Action
-    </button>
-  </p>
-  
-  <p>
-    Icon with a badge
-    <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
-  </p>
-  
+
+<!-- Put some info in here later. -->
+<slideshow [height]="height"
+           [minHeight]="'350px'"
+           [autoPlay]="true"
+           [showArrows]="false"
+           [imageUrls]="imageSources"
+           [lazyLoad]="imageSources?.length > 1"
+           [autoPlayWaitForLazyLoad]="true">
+</slideshow>
+
+<!-- <img src="../../../../assets/Zapdos.png"> -->
+<app-line-chart></app-line-chart>
