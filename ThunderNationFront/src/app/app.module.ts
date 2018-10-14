@@ -34,7 +34,9 @@ import { GroupsComponent } from './components/pages/groups/groups.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },
-    { path: '/profile/:username', component: ProfileComponent},
+    //{ path: 'profile/:username', component: ProfileComponent},
+    {path: 'groups', component: GroupsComponent},
+    {path: 'profile', component: ProfileComponent},
 
   // { path: 'crisis-center', component: CrisisListComponent },
   // { path: 'hero/:id',      component: HeroDetailComponent },
