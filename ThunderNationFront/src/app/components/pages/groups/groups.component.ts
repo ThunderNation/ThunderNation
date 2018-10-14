@@ -17,7 +17,7 @@ export class GroupsComponent implements OnInit {
   ngOnInit() {
     this.userService.getAllGroups().subscribe((response) =>{
       console.log(response);
-      this.groups = response;
+      this.groups = response.groups;
     })
 
   }
