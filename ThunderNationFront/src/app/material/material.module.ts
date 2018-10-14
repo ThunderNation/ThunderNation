@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+import {MatCardModule} from '@angular/material/card';
 
 import {MatBadgeModule} from '@angular/material/badge';
 
@@ -22,6 +23,7 @@ import {MatBadgeModule} from '@angular/material/badge';
     MatButtonModule,
     MatCheckboxModule,
     MatBadgeModule,
+    MatCardModule,
 ],
   exports: [
     MatSidenavModule,
