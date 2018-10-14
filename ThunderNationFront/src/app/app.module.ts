@@ -3,6 +3,11 @@ import { NgModule } from '@angular/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/pages/home/home.component';
 
@@ -46,11 +51,16 @@ const appRoutes: Routes = [
       // { enableTracing: true } // <-- debugging purposes only
     ),
     MatSidenavModule,
+
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatListModule,
+    MatButtonModule,
     BrowserAnimationsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-//HI
