@@ -1,0 +1,16 @@
+.row{
+  padding-top: 2em;
+  padding-right: 3em;
+  padding-left: 3em;
+}
+
+p {
+  background-color: #FBC02D;
+  padding: 1.5em;
+}
+
+div.box{
+  background-color: #FBC02D;
+  padding: 1.5em;
+  margin:2em;
+}
