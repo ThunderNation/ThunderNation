@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { UserDataService }  from './../../../services/user-data.service'
+
 @Component({
   selector: 'app-groups',
   templateUrl: './groups.component.html',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GroupsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private userService: UserDataService) { }
 
   ngOnInit() {
+    this.userService.getGroups().subscribe((response) =>{
+      console.log(response);
+      this.groups = response;
+    })
+
   }
 
 }
