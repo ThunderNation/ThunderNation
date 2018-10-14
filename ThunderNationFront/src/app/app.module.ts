@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common'
 
-import { MaterialModule } from './material.module';
+import { MaterialModule } from './material/material.module';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { SlideshowModule } from 'ng-simple-slideshow';
 
@@ -24,7 +24,11 @@ import { FormsModule } from '@angular/forms';
 
 
 import { RouterModule, Routes } from '@angular/router';
+
+import { ProfileComponent } from './components/pages/profile/profile.component';
+
 import { LoginComponent } from './components/pages/login/login.component';
+
 
 const appRoutes: Routes = [
     { path: '', component: LoginComponent },
@@ -51,7 +55,8 @@ const appRoutes: Routes = [
     LineChartComponent,
     BarChartComponent,
     PieChartComponent,
-    LoginComponent
+    ProfileComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
