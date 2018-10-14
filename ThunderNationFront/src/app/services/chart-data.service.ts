@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import {Observable, of} from 'rxjs';
-import {catchError, debounceTime, distinctUntilChanged, map, tap, switchMap} from 'rxjs/operators'
+import {catchError, debounceTime, distinctUntilChanged, map, tap, switchMap} from 'rxjs/operators';
 import { headersToString } from 'selenium-webdriver/http';
 
 @Injectable({
@@ -28,7 +28,7 @@ export class ChartDataService {
     return this.http.post<any>('https://emp-dev-api.duke-energy.com/', body)
   }
 
-  
+
 
   // getData2(url:string, params:any) {
   //   if(url === '' )

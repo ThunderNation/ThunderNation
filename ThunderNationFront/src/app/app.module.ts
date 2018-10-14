@@ -29,11 +29,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProfileComponent } from './components/pages/profile/profile.component';
 
 import { LoginComponent } from './components/pages/login/login.component';
+import { GroupsComponent } from './components/pages/groups/groups.component';
 
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },
-    { path: 'login', component: LoginComponent}
+    { path: '/profile/:username', component: ProfileComponent},
 
   // { path: 'crisis-center', component: CrisisListComponent },
   // { path: 'hero/:id',      component: HeroDetailComponent },
@@ -59,6 +60,7 @@ const appRoutes: Routes = [
     PieChartComponent,
     ProfileComponent,
     LoginComponent,
+    GroupsComponent,
   ],
   imports: [
     BrowserModule,
