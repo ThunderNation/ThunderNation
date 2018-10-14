@@ -5,7 +5,7 @@ import { HttpParams } from '@angular/common/http';
  import { ChartDataService }  from './../../../services/chart-data.service';
 
 
-const URL = 'https://thundernation-219400.appspot.com/getChartData';
+const URL = 'https://thundernation-219400.appspot.com/getChartData3';
 const PARAMS = new HttpParams();
 //
 @Component({
@@ -22,6 +22,7 @@ export class LineChartComponent implements OnInit {
 
   ngOnInit() {
     this.dataService.getData(URL, PARAMS).subscribe((response) => {
+      //console.log(response);
       this.chartDatasets = response.datasets;
       this.chartLabels = response.labels;
 
@@ -39,7 +40,7 @@ export class LineChartComponent implements OnInit {
 
     public chartColors:Array<any> = [
         {
-            backgroundColor: 'rgba(220,220,220,0.2)',
+            backgroundColor: '#FBC02D',
             borderColor: 'rgba(220,220,220,1)',
             borderWidth: 2,
             pointBackgroundColor: 'rgba(220,220,220,1)',
@@ -47,6 +48,7 @@ export class LineChartComponent implements OnInit {
             pointHoverBackgroundColor: '#fff',
             pointHoverBorderColor: 'rgba(220,220,220,1)'
         },
+        /*
         {
             backgroundColor: 'rgba(151,187,205,0.2)',
             borderColor: 'rgba(151,187,205,1)',
@@ -56,6 +58,7 @@ export class LineChartComponent implements OnInit {
             pointHoverBackgroundColor: '#fff',
             pointHoverBorderColor: 'rgba(151,187,205,1)'
         }
+        */
     ];
 
     public chartOptions:any = {
