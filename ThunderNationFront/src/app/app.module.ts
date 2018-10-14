@@ -14,6 +14,8 @@ import { AppComponent } from './app.component';
 
 // Page Components
 import { HomeComponent } from './components/pages/home/home.component';
+import { ProfileComponent } from './components/pages/profile/profile.component';
+import { LoginComponent } from './components/pages/login/login.component';
 
 // Support Components
 import { SidenavComponent } from './components/support/sidenav/sidenav.component';
@@ -26,14 +28,10 @@ import { MatCardModule } from '@angular/material/card';
 
 import { RouterModule, Routes } from '@angular/router';
 
-import { ProfileComponent } from './components/pages/profile/profile.component';
-
-import { LoginComponent } from './components/pages/login/login.component';
-
-
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },
-    { path: 'login', component: LoginComponent}
+    { path: 'login', component: LoginComponent},
+    { path: 'profile', component: ProfileComponent}
 
   // { path: 'crisis-center', component: CrisisListComponent },
   // { path: 'hero/:id',      component: HeroDetailComponent },
