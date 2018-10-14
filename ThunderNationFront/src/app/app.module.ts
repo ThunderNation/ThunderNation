@@ -17,6 +17,7 @@ import { BarChartComponent } from './components/support/bar-chart/bar-chart.comp
 import { PieChartComponent } from './components/support/pie-chart/pie-chart.component';
 
 import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './components/pages/login/login.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },
@@ -42,7 +43,8 @@ const appRoutes: Routes = [
     SidenavComponent,
     LineChartComponent,
     BarChartComponent,
-    PieChartComponent
+    PieChartComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
