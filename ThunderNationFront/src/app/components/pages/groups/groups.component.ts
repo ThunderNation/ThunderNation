@@ -15,7 +15,7 @@ export class GroupsComponent implements OnInit {
   constructor(private userService: UserDataService) { }
 
   ngOnInit() {
-    this.userService.getGroups().subscribe((response) =>{
+    this.userService.getAllGroups().subscribe((response) =>{
       console.log(response);
       this.groups = response;
     })
