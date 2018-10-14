@@ -6,6 +6,9 @@
     top: 0;
     bottom: 0;
 
+    background: black;
+    background-size: cover;
+    opacity: 0.9;
 
 }
 
@@ -26,6 +29,7 @@
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.35);
     margin: 0px auto; 
     margin-top: 150px;
+    opacity: 100%;
 }
 
 .text {
