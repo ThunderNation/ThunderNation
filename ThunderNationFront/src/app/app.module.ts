@@ -28,11 +28,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { ProfileComponent } from './components/pages/profile/profile.component';
 
-import { LoginComponent } from './components/pages/login/login.component';
+//import { LoginComponent } from './components/pages/login/login.component';
 
 
 const appRoutes: Routes = [
-    { path: '', component: LoginComponent },
+    { path: '', component: HomeComponent },
 
   // { path: 'crisis-center', component: CrisisListComponent },
   // { path: 'hero/:id',      component: HeroDetailComponent },
@@ -57,7 +57,7 @@ const appRoutes: Routes = [
     BarChartComponent,
     PieChartComponent,
     ProfileComponent,
-    LoginComponent,
+    //LoginComponent,
   ],
   imports: [
     BrowserModule,
