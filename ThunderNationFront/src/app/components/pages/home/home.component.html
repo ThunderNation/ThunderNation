@@ -1,14 +1,53 @@
 <!-- Put some info in here later. -->
-<slideshow [height]="height"
-           [minHeight]="'350px'"
-           [autoPlay]="true"
-           [showArrows]="false"
-           [imageUrls]="imageSources"
-           [lazyLoad]="imageSources?.length > 1"
-           [autoPlayWaitForLazyLoad]="true">
+<slideshow [height]="height" [minHeight]="'350px'" [autoPlay]="true" [showArrows]="false" [imageUrls]="imageSources"
+  [lazyLoad]="imageSources?.length > 1" [autoPlayWaitForLazyLoad]="true">
 </slideshow>
 
-<!-- <img src="../../../../assets/Zapdos.png"> -->
-<app-line-chart></app-line-chart>
-<app-bar-chart></app-bar-chart>
+<!-- More Info -->
+<div class="row">
 
+  <div class="box col-md-3">
+    <h3 style='text-align: center;'>Renewable Energy</h3>
+    <p>Steps are being made to...</p>
+    <a href=""><button mat-button>Learn More!</button></a>
+
+  </div>
+
+  <div class="box col-md-3">
+    <h3 style='text-align: center;'>Community</h3>
+    Steps are being made to...
+    <a href="https://350.org"><button mat-button>Learn More!</button></a>
+
+  </div>
+
+
+  <div class="box col-md-3">
+    <h3 style='text-align: center;'>Learn</h3>
+    Learn more about how to create renewable energy at home.
+    <a href="https://www.energysage.com "><button mat-button>Learn More!</button></a>
+
+  </div>
+
+</div>
+
+
+<app-login [hidden]="!viewLogin"></app-login>
+
+
+<!-- Use for JOIN NOW  -->
+<div class="row">
+  <div class="col-md-12 text-center">
+    <button mat-raised-button color="warn" (click)="toggleLogin()"><h3>JOIN NOW</h3></button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-sm-12">
+    <app-line-chart></app-line-chart>
+  </div>
+  <div class="col-md-6 col-sm-12">
+    <app-bar-chart></app-bar-chart>
+  </div>
+</div>
+
+<!-- <app-profile></app-profile> -->
