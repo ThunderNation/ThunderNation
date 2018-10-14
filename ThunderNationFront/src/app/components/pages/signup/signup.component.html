@@ -1,0 +1,71 @@
+<div class="container">
+
+  <h1>Register</h1>
+
+  <div class="row">
+    <!-- Name -->
+    <mat-form-field>
+      <input matInput placeholder="Name" [(ngModel)]="name">
+    </mat-form-field>
+  </div>
+
+  <div class="row">
+    <!-- Username -->
+    <mat-form-field>
+      <input matInput placeholder="Username" [(ngModel)]="username">
+    </mat-form-field>
+  </div>
+
+
+  <div class="row">
+      <!-- Email -->
+      <mat-form-field>
+        <input matInput placeholder="Email" [(ngModel)]="email">
+      </mat-form-field>
+    </div>
+
+  <div class="row">
+    <!-- Password -->
+    <mat-form-field>
+      <input matInput type="password" placeholder="Enter Password" [(ngModel)]="password">
+    </mat-form-field>
+  </div>
+
+  <div class="row">
+    <mat-form-field>
+      <input matInput type="password" placeholder="Enter Password Again" [(ngModel)]="password2">
+    </mat-form-field>
+  </div>
+
+  <div class="row">
+    <!-- Select Country -->
+    <mat-form-field>
+      <mat-select placeholder="Select Country" [(ngModel)]="continent">
+        <mat-option *ngFor = "let c of CONTINENTS" value="{{c}}">{{c}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="row">
+    <!-- Zipcode -->
+    <mat-form-field>
+      <input matInput placeholder="Zipcode" [(ngModel)]="zipcode">
+    </mat-form-field>
+  </div>
+
+  <div class="row">
+    <button mat-button color="accent" (click)="signUp()">LOLOL</button>
+  </div>
+</div>
+
+
+
+
+<!-- {
+	"username": "testUser",
+    "country": "USA",
+    "email": "someEmail@gmail.com",
+    "zipcode": "11000",
+    "name": "Not Tunak",
+    "password" : "123123"
+} -->

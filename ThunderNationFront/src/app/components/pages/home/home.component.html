@@ -1,53 +1,86 @@
 <!-- Put some info in here later. -->
-<slideshow [height]="height" [minHeight]="'350px'" [autoPlay]="true" [showArrows]="false" [imageUrls]="imageSources"
-  [lazyLoad]="imageSources?.length > 1" [autoPlayWaitForLazyLoad]="true">
-</slideshow>
 
-<!-- More Info -->
-<div class="row">
+<div class="container">
 
-  <div class="box col-md-3">
-    <h3 style='text-align: center;'>Renewable Energy</h3>
-    <p>Steps are being made to...</p>
-    <a href=""><button mat-button>Learn More!</button></a>
+  <!-- [height]="height" [ -->
+  <slideshow [minHeight]="'350px'" [autoPlay]="true" [showArrows]="false" [imageUrls]="imageSources" [lazyLoad]="imageSources?.length > 1"
+    [autoPlayWaitForLazyLoad]="true">
+  </slideshow>
+
+  <!-- <div class="row"> -->
+  <div class="about-us">
+      Every year, millions of resources are used across the globe for energy production despite the growth of modern
+      technology. Our current technology allows for the common person to install renewable energy resources in their
+      own home.
+      However, many of us are unaware of the availability of these technologies, the affordable costs, and all of the
+      benefits.
+
+      <br>
+      <b>Let us build a community to empower every day people to make the world a better place.</b>
+  </div>
+  <!-- </div> -->
+
+  <div style="text-align:center; align-items: center; margin: auto;">
+    <!-- More Info -->
+    <div class="row">
+
+      <div class="box col-md-4">
+
+        <div class="box-inner">
+          <h3 style='text-align: center;'>Renewable Energy</h3>
+          <p>There are many available ways to start attaining renewable energy sources in your own home, created by
+            you.</p>
+          <a href=""><button mat-button>Learn More!</button></a>
+        </div>
+
+
+      </div>
+
+      <div class="box col-md-4">
+        <div class="box-inner">
+
+          <h3 style='text-align: center;'>Community</h3>
+          <p>Creating environmentally responsible leaders, one achievement at a time. </p>
+          <a href="https://350.org"><button mat-button>Learn More!</button></a>
+        </div>
+      </div>
+
+
+      <div class="box col-md-4">
+        <div class="box-inner">
+
+          <h3 style='text-align: center;'>Learn</h3>
+          <p>Learn more about how to create renewable energy at home.</p>
+          <a href="https://www.energysage.com "><button mat-button>Learn More!</button></a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <app-login [hidden]="!viewLogin"></app-login>
+
+
+    <!-- Use for JOIN NOW  -->
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <button mat-raised-button color="warn" (click)="toggleLogin()">
+          <h3>JOIN NOW</h3>
+        </button>
+        <!-- <a routerLink="/login"><button mat-raised-button color="warn" (click)="toggleLogin()"><h3>JOIN NOW</h3></button></a> -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <app-line-chart></app-line-chart>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <app-bar-chart></app-bar-chart>
+      </div>
+    </div>
 
   </div>
-
-  <div class="box col-md-3">
-    <h3 style='text-align: center;'>Community</h3>
-    Steps are being made to...
-    <a href="https://350.org"><button mat-button>Learn More!</button></a>
-
-  </div>
-
-
-  <div class="box col-md-3">
-    <h3 style='text-align: center;'>Learn</h3>
-    Learn more about how to create renewable energy at home.
-    <a href="https://www.energysage.com "><button mat-button>Learn More!</button></a>
-
-  </div>
+  <!-- <app-profile></app-profile> -->
 
 </div>
-
-
-<app-login [hidden]="!viewLogin"></app-login>
-
-
-<!-- Use for JOIN NOW  -->
-<div class="row">
-  <div class="col-md-12 text-center">
-    <button mat-raised-button color="warn" (click)="toggleLogin()"><h3>JOIN NOW</h3></button>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-6 col-sm-12">
-    <app-line-chart></app-line-chart>
-  </div>
-  <div class="col-md-6 col-sm-12">
-    <app-bar-chart></app-bar-chart>
-  </div>
-</div>
-
-<!-- <app-profile></app-profile> -->

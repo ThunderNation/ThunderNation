@@ -24,8 +24,11 @@ export class ChartDataService {
     header.append('username', username)
     header.append('password', password)
 
-    var body = {}
-    return this.http.post<any>('https://emp-dev-api.duke-energy.com/', body)
+    var body = {
+      'username' : username,
+      'password' : password
+    }
+    return this.http.post<any>('https://thundernation-219400.appspot.com/login', body)
   }
 
 

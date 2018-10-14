@@ -1,16 +1,32 @@
 .row{
   padding-top: 2em;
-  padding-right: 3em;
-  padding-left: 3em;
+}
+
+.about-us{
+  margin-top: 1.5em;
+  padding-top: 1rem;
+  padding-left: 1.5em;
+  padding-right: 1rem;
+  padding-bottom: 1em;
+  background-color: #FBC02D;
 }
 
 p {
+  margin-top: 1.5em;
   background-color: #FBC02D;
-  padding: 1.5em;
+  /* padding: 1.5em; */
 }
 
 div.box{
+  background-color: #fff;
+  /* padding: 1.5em; */
+  /* margin:2em; */
+}
+
+.box-inner{
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
   background-color: #FBC02D;
-  padding: 1.5em;
-  margin:2em;
+  height: 200px;
 }
