@@ -1,16 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
-
-// Material
 import { MaterialModule } from './material.module';
-
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-
+import { SlideshowModule } from 'ng-simple-slideshow';
 
 // Main Component
 import { AppComponent } from './app.component';
@@ -59,10 +55,12 @@ const appRoutes: Routes = [
       appRoutes,
       // { enableTracing: true } // <-- debugging purposes only
     ),
+    HttpClientModule,
+    BrowserAnimationsModule,
 
-    MatSidenavModule,
     MDBBootstrapModule.forRoot(),
-    MaterialModule
+    MaterialModule,
+    SlideshowModule
 
   ],
   providers: [],
