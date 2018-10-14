@@ -26,6 +26,7 @@ import { ProfileComponent } from './components/pages/profile/profile.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },
+    {pat '/login/:username', component: ProfileComponent}
 
   // { path: 'crisis-center', component: CrisisListComponent },
   // { path: 'hero/:id',      component: HeroDetailComponent },
