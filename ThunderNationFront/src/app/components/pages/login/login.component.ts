@@ -14,6 +14,9 @@ export class LoginComponent implements OnInit {
   title = 'UAT Account Selector Tool';
   errorMessage = 'The username or password is incorrect. Please try again.'
   invalidEntry = false;
+
+
+
   constructor(private _backendService: ChartDataService, private _router: Router) { }
   
   ngOnInit() {
@@ -23,9 +26,10 @@ export class LoginComponent implements OnInit {
     };
   }
 
-  button_click() {
-      
+  signup(){
+    this._router.navigateByUrl('/signup')
   }
+
   login(){
 
     this.invalidEntry = false;
@@ -37,7 +41,8 @@ export class LoginComponent implements OnInit {
       this._backendService.login(this.username, this.password).subscribe(
         response => {
 
-          alert("Login Succesful");
+          // alert("Login Succesful");
+          this._router.navigateByUrl('/profile')
           // localStorage.setItem("namID", this.username);
           // localStorage.setItem("token", response['access_token'])
           // this._backendService.checkUser(this.username).subscribe(
