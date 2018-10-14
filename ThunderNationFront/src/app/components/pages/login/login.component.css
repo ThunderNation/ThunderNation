@@ -29,14 +29,12 @@
 }
 
 .text {
-    font-family: NewsGothicBT-Light;
     font-size: 12px;
     color: #757575;
     line-height: 12px;
 }
 
 .title {
-    font-family: NewsGothicBT-Demi;
     font-size: 27.66px;
     color: #4A4A4A;
     text-align: left;
@@ -45,7 +43,6 @@
 }
 
 .titleLight {
-    font-family: NewsGothicBT-Light;
     font-size: 22.13px;
     color: #757575;
     text-align: left;

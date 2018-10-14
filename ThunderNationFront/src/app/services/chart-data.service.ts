@@ -24,11 +24,8 @@ export class ChartDataService {
     header.append('username', username)
     header.append('password', password)
 
-    return this.http.post('https://emp-dev-api.duke-energy.com/', {
-      headers: header
-    })
-    .map(response => response.json())
-    .catch(error => Observable.throw(error));
+    var body = {}
+    return this.http.post<any>('https://emp-dev-api.duke-energy.com/', body)
   }
 
   
