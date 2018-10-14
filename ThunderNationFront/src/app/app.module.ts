@@ -1,8 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+
+
 // Material
 import { MaterialModule } from './material.module';
+
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 
 // Main Component
 import { AppComponent } from './app.component';
@@ -15,6 +23,7 @@ import { SidenavComponent } from './components/support/sidenav/sidenav.component
 import { LineChartComponent } from './components/support/line-chart/line-chart.component';
 import { BarChartComponent } from './components/support/bar-chart/bar-chart.component';
 import { PieChartComponent } from './components/support/pie-chart/pie-chart.component';
+
 
 import { RouterModule, Routes } from '@angular/router';
 
@@ -50,6 +59,9 @@ const appRoutes: Routes = [
       appRoutes,
       // { enableTracing: true } // <-- debugging purposes only
     ),
+
+    MatSidenavModule,
+    MDBBootstrapModule.forRoot(),
     MaterialModule
 
   ],
