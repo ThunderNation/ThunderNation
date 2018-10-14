@@ -3,8 +3,9 @@
 }
 
 p {
+  margin-top: 1.5em;
   background-color: #FBC02D;
-  /* padding: 1.5em; */
+  padding: 1.5em;
 }
 
 div.box{

@@ -15,7 +15,7 @@ import { UserDataService }  from './../../../services/user-data.service';
 })
 export class ProfileComponent implements OnInit {
 
-  private user;
+  public user;
 
   constructor(private dataService: UserDataService) { }
 
