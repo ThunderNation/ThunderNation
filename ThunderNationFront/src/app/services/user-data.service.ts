@@ -27,7 +27,33 @@ export class UserDataService {
     return this.http.get<any>(url, { headers: header })
   }
 
+  createAccount(username, country, email, zipcode, name, password){
+    let url = this.URL + "/addUser"
+
+    let header = new HttpHeaders({'Content-Type': 'application/json', 'responseType': 'text'})
+
+    var body = {
+      "username": username,
+      "country": country,
+      "email": email,
+      "zipcode": zipcode,
+      "name": name,
+      "password": password
+    }
+
+    return this.http.post<any>(url, body, {headers: header});
+  }
+
   /*
+  {
+	"username": "testUser3",
+    "country": "USA",
+    "email": "someEmail@gmail.com",
+    "zipcode": "110011",
+    "name": "Not Tunak",
+    "password" : "123123"
+}
+
 
   login(username, password): Observable<any[]> {
     let header = new Headers();

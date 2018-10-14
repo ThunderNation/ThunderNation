@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common'
 
-import { MaterialModule } from './material/material.module';
+import { MaterialModule } from './material.module';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { SlideshowModule } from 'ng-simple-slideshow';
 
@@ -27,11 +27,13 @@ import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 
 import { RouterModule, Routes } from '@angular/router';
+import { SignupComponent } from './components/pages/signup/signup.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'login', component: LoginComponent},
-    { path: 'profile', component: ProfileComponent}
+    { path: 'profile', component: ProfileComponent},
+    { path: 'signup', component: SignupComponent}
 
   // { path: 'crisis-center', component: CrisisListComponent },
   // { path: 'hero/:id',      component: HeroDetailComponent },
@@ -57,6 +59,7 @@ const appRoutes: Routes = [
     PieChartComponent,
     ProfileComponent,
     LoginComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,

@@ -26,6 +26,10 @@ export class LoginComponent implements OnInit {
     };
   }
 
+  signup(){
+    this._router.navigateByUrl('/signup')
+  }
+
   login(){
 
     this.invalidEntry = false;
@@ -38,7 +42,6 @@ export class LoginComponent implements OnInit {
         response => {
 
           // alert("Login Succesful");
-          console.log("Login successful!")
           this._router.navigateByUrl('/profile')
           // localStorage.setItem("namID", this.username);
           // localStorage.setItem("token", response['access_token'])
