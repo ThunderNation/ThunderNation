@@ -8,6 +8,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/pages/home/home.component';
 
@@ -15,6 +17,7 @@ import { SidenavComponent } from './components/support/sidenav/sidenav.component
 import { LineChartComponent } from './components/support/line-chart/line-chart.component';
 import { BarChartComponent } from './components/support/bar-chart/bar-chart.component';
 import { PieChartComponent } from './components/support/pie-chart/pie-chart.component';
+
 
 import { RouterModule, Routes } from '@angular/router';
 
@@ -57,7 +60,9 @@ const appRoutes: Routes = [
     MatToolbarModule,
     MatListModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
+    MDBBootstrapModule.forRoot(),
 
   ],
   providers: [],
