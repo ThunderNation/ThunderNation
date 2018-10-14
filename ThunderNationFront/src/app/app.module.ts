@@ -20,6 +20,7 @@ import { LineChartComponent } from './components/support/line-chart/line-chart.c
 import { BarChartComponent } from './components/support/bar-chart/bar-chart.component';
 import { PieChartComponent } from './components/support/pie-chart/pie-chart.component';
 
+import {MatCardModule} from '@angular/material/card';
 
 import { RouterModule, Routes } from '@angular/router';
 import { ProfileComponent } from './components/pages/profile/profile.component';
@@ -62,7 +63,8 @@ const appRoutes: Routes = [
 
     MDBBootstrapModule.forRoot(),
     MaterialModule,
-    SlideshowModule
+    SlideshowModule,
+    MatCardModule,
 
   ],
   providers: [],
