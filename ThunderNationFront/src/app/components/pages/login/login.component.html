@@ -1,0 +1,53 @@
+<div class="loginPage">
+  
+  <div class="loginFragment">
+
+
+    
+      <div class="center" style="padding-top: 20px">
+        
+          <div class="logo-container">
+            <div class="logo">
+              <img src="./1337502.png"> 
+            <div class="title">
+              ThunderNation
+            </div>
+            <div class="titleLight">
+              Help Contribute to Brighter Future
+            </div>
+            </div>
+          </div>
+       
+        <div class="form-group col-sm-10" style="margin-top: 150px;">
+          <input name="username" [(ngModel)]="username" type="username" [ngClass]="{'is-invalid': invalidEntry}" placeholder="Username" style="margin: 20px auto;" class="form-control is-invalid" >
+          <input name="password" [(ngModel)]="password" type="password" [ngClass]="{'is-invalid': invalidEntry}" placeholder="Password" style="margin-top: 20px auto;" class="form-control is-invalid" (keydown.enter)="login()" >
+          <div class="invalid-feedback">
+            {{errorMessage}}
+          </div>
+        </div>
+        
+        <div style="text-align: center" style="margin: 30px;">
+            <button type="submit" class="btn btn-primary" (click)="login()" >Sign in</button>
+            <button type="submit" class="btn btn-success" (click)="login()" style="margin-left: 20px">Sign up</button>
+        </div>
+
+
+      </div>
+
+    
+  </div>
+
+  <!-- <footer>
+    <div class= "loginBottomDiv" style="min-height: 150px">
+      <div class="text" style="padding: 30px">
+        Powered By
+      </div>
+      <img src="./performance.svg">
+      <div class="text" style="padding: 17px">
+        © 2018 All Rights Reserved  
+      </div>
+    </div>
+  </footer> -->
+
+  
+</div>
