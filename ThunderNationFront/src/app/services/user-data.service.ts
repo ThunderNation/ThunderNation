@@ -5,7 +5,7 @@ import {catchError, debounceTime, distinctUntilChanged, map, tap, switchMap} fro
 
 
 
-const GROUPSURL = "https://thundernation-219400.appspot.com/getGroups";
+const GROUPSURL = "https://thundernation-219400.appspot.com/getAllGroups";
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +13,7 @@ const GROUPSURL = "https://thundernation-219400.appspot.com/getGroups";
 export class UserDataService {
 
   private URL = "https://thundernation-219400.appspot.com"
+  
 
   constructor(private http : HttpClient) { }
 
@@ -28,6 +29,7 @@ export class UserDataService {
   getAllGroups = () => {
     return this.http.get<any>(GROUPSURL);
   }
+
   getUserData(username){
     let url = this.URL + "/profile"
 
@@ -52,28 +54,6 @@ export class UserDataService {
     return this.http.post<any>(url, body, {headers: header});
   }
 
-  /*
-  {
-	"username": "testUser3",
-    "country": "USA",
-    "email": "someEmail@gmail.com",
-    "zipcode": "110011",
-    "name": "Not Tunak",
-    "password" : "123123"
-}
 
-
-  login(username, password): Observable<any[]> {
-    let header = new Headers();
-    header.append('username', username)
-    header.append('password', password)
-
-    var body = {
-      'username' : username,
-      'password' : password
-    }
-    return this.http.post<any>('https://thundernation-219400.appspot.com/login', body)
-  }
-  */
 
 }

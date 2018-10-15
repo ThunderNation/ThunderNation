@@ -11,16 +11,16 @@ import {Router} from '@angular/router';
 })
 export class SignupComponent implements OnInit {
 
-  public CONTINENTS = ['North America', 'South America', 'Europe', 'Africa', 'Asia', 'Australia']
+  private CONTINENTS = ['North America', 'South America', 'Europe', 'Africa', 'Asia', 'Australia']
 
-  public name = '';
-  public username= '';
-  public password = '';
-  public password2 = '';
-  public email = '';
+   name = '';
+   username= '';
+   password = '';
+   password2 = '';
+   email = '';
 
-  public continent = '';
-  public zipcode = '';
+   continent = '';
+   zipcode = '';
 
   constructor(private userService: UserDataService, private _router: Router) { }
 

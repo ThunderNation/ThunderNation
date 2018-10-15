@@ -28,9 +28,6 @@ import { MatCardModule } from '@angular/material/card';
 
 import { RouterModule, Routes } from '@angular/router';
 
-import { ProfileComponent } from './components/pages/profile/profile.component';
-
-import { LoginComponent } from './components/pages/login/login.component';
 import { GroupsComponent } from './components/pages/groups/groups.component';
 
 

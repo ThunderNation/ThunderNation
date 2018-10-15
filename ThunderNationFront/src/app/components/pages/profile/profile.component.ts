@@ -15,14 +15,14 @@ import { UserDataService }  from './../../../services/user-data.service';
 })
 export class ProfileComponent implements OnInit {
 
-  public user;
+   user;
 
   constructor(private dataService: UserDataService) { }
 
   ngOnInit() {
-    /*
-    this.dataService.getData(URL).subscribe((response) => {
-      console.log(response);
+    
+    //this.dataService.getData(URL).subscribe((response) => {
+      //console.log(response);
       //this.chartDatasets = response.datasets;
       //this.chartLabels = response.labels;
     // this.dataService.getData(URL).subscribe((response) => {
@@ -40,7 +40,7 @@ export class ProfileComponent implements OnInit {
       this.user = response
 
     })
-    */
+    
   }
 
   /*
